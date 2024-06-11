@@ -35,3 +35,29 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// ++++++++++++++++++++++++++++++++++
+
+//  stack(Primitive),  heap (Non-Primitive)
+
+let myName = "Aquib"
+
+let anotherName = myName
+anotherName = "abcd"
+console.log(myName);
+console.log(anotherName);
+ 
+let userOne = {
+    email:  "abcd@gmail.com",
+    upi:  "abcd@ybl"
+}
+
+let usertwo = userOne
+
+usertwo.email = "user@gmail.com"
+
+console.log(userOne.email);
+console.log(usertwo.email);
+
+
